@@ -24,7 +24,7 @@ function loadingAnimation() {
     });
 }
 
-// Animates the nav when hovered
+
 function navAnimation() {
   const nav = document.querySelector("nav");
 
@@ -52,7 +52,7 @@ function navAnimation() {
   });
 }
 
-// Smaller sequential animations for page elements
+
 function smallanim() {
   const tl = gsap.timeline();
 
@@ -97,8 +97,8 @@ function crsr() {
   });
   video.addEventListener("mousemove", function (dets) {
     gsap.to("#crsr", {
-      top: dets.y - 50,
-      left: dets.x - 70,
+      top: dets.y  +  600,
+      left: dets.x - 30,
     });
   });
   video.addEventListener("mouseleave", function () {
